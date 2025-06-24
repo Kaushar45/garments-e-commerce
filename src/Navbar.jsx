@@ -17,12 +17,30 @@ const Navbar = () => {
         }}
       >
         <div>
-          <h1>Garments E-Commerce</h1>
+          <h1> Kaushar's Garments</h1>
         </div>
-        <div>
-          <a href="/"> Home</a>
-          <a href="/about"> About</a>
-          <a href="/contact"> Contact</a>
+        <div style={{ margin: "20px" }}>
+          <a
+            style={{ textDecoration: "none", color: "white", margin: "6px" }}
+            href="/"
+          >
+            {" "}
+            Home
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "white", margin: "6px" }}
+            href="/about"
+          >
+            {" "}
+            About
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "white", margin: "6px" }}
+            href="/contact"
+          >
+            {" "}
+            Contact
+          </a>
         </div>
       </div>
       <Routes>

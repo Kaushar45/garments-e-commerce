@@ -29,6 +29,13 @@ const Navbar = () => {
           </a>
           <a
             style={{ textDecoration: "none", color: "white", margin: "6px" }}
+            href="/"
+          >
+            {" "}
+            Collecton
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "white", margin: "6px" }}
             href="/about"
           >
             {" "}

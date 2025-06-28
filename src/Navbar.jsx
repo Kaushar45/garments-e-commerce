@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFoundPage from "./NotFoundPage";
+import Collection from "./pages/Collection";
+import Login from "./auth/Login";
+import Signup from "./auth/Signup";
 
 const Navbar = () => {
   return (
@@ -29,7 +32,7 @@ const Navbar = () => {
           </a>
           <a
             style={{ textDecoration: "none", color: "white", margin: "6px" }}
-            href="/"
+            href="/collection"
           >
             {" "}
             Collecton
@@ -48,12 +51,29 @@ const Navbar = () => {
             {" "}
             Contact
           </a>
+          <a
+            style={{ textDecoration: "none", color: "white", margin: "6px" }}
+            href="/auth/login"
+          >
+            {" "}
+            Login
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "white", margin: "6px" }}
+            href="/auth/signup"
+          >
+            {" "}
+            Signup
+          </a>
         </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/auth/login" element={<Login />} />
+        <Route path="/auth/signup" element={<Signup />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </>

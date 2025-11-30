@@ -1,24 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import NotFoundPage from "./NotFoundPage";
-import Collection from "./pages/Collection";
-import Login from "./auth/Login";
-import Signup from "./auth/Signup";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import NotFoundPage from "../NotFoundPage";
+import Collection from "../pages/Collection";
+import Login from "../auth/Login";
+import Signup from "../auth/Signup";
 
 const Navbar = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: "4px",
-        }}
-      >
+      <div className="flex justify-between items-center gap-2  border-b-[1px] border-neutral-100">
         <div>
           <h1> Kaushar's Garments</h1>
         </div>

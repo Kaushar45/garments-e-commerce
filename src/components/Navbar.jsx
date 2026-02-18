@@ -110,12 +110,6 @@ const Navbar = () => {
                 className="relative p-2 hover:bg-purple-50 rounded-full transition-all hover:scale-110 group"
               >
                 <User className="w-5 h-5 text-gray-600 group-hover:text-purple-600 transition-colors" />
-
-                {wishlist.length > 0 && (
-                  <span className="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center animate-bounce">
-                    {wishlist.length}
-                  </span>
-                )}
               </Link>
 
               <Link

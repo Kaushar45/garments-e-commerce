@@ -15,6 +15,7 @@ import Shop from "../pages/Collection";
 import Wishlist from "../pages/Wishlist";
 import Cart from "../pages/Cart";
 import NotFound from "../NotFound";
+import Profile from "../pages/Profile";
 const AppContent = () => {
   return (
     <Router>
@@ -27,6 +28,7 @@ const AppContent = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/wishlist" element={<Wishlist />} />
